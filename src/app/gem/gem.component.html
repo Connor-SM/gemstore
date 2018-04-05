@@ -22,7 +22,7 @@
       </ul>
 
       <div class="text-center">
-        <button (click)="gem.inventory = gem.inventory - 1" *ngIf="gem.inventory > 0" class="btn btn-success">Add to Cart</button>
+        <button (click)="addToCart()" *ngIf="gem.inventory > 0" class="btn btn-success">Add to Cart</button>
         <button *ngIf="gem.inventory <= 0" class="btn btn-danger" disabled>Sold Out</button>
       </div>
     </div>
