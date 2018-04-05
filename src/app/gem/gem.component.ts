@@ -30,9 +30,9 @@ export class GemComponent implements OnInit {
     if (flag == false) {
       this.cart.items.push(
         {
-          gemid: this.gem.id
+          gemid: this.gem.id,
           name: this.gem.name,
-          price: this.gem.price,
+          unitPrice: this.gem.price,
           quantity: 1
         }
       );
